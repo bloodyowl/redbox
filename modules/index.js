@@ -32,6 +32,9 @@ class RedBox extends Component {
 
 const styles = createStyleSheet({
   redbox: {
+    boxSizing: "border-box",
+    display: "flex",
+    flexDirection: "column",
     fontSize: rem(1),
     position: "fixed",
     padding: rem(1),
@@ -44,20 +47,35 @@ const styles = createStyleSheet({
     zIndex: 10000,
   },
   message: {
+    boxSizing: "border-box",
+    display: "flex",
+    flexDirection: "row",
     fontWeight: 700,
   },
   stack: {
+    boxSizing: "border-box",
+    display: "flex",
+    flexDirection: "column",
     fontFamily: "Menlo, Consolas, monospace",
     marginTop: rem(2),
   },
   frame: {
+    boxSizing: "border-box",
+    display: "flex",
+    flexDirection: "column",
     marginTop: rem(1),
   },
   file: {
+    boxSizing: "border-box",
+    display: "flex",
+    flexDirection: "column",
     fontSize: rem(0.8),
     color: "rgba(255, 255, 255, 0.7)",
   },
   link: {
+    boxSizing: "border-box",
+    display: "flex",
+    flexDirection: "column",
     textDecoration: "none",
     color: "rgba(255, 255, 255, 0.7)",
   },
