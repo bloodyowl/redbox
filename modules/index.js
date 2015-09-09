@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from "react"
-import { createStyleSheet, rem } from "stile"
 import ErrorStackParser from "error-stack-parser"
 
 class RedBox extends Component {
@@ -30,14 +29,14 @@ class RedBox extends Component {
   }
 }
 
-const styles = createStyleSheet({
+const styles = {
   redbox: {
     boxSizing: "border-box",
     display: "flex",
     flexDirection: "column",
-    fontSize: rem(1),
+    fontSize: "1rem",
     position: "fixed",
-    padding: rem(1),
+    padding: "1rem",
     top: 0,
     bottom: 0,
     left: 0,
@@ -57,19 +56,19 @@ const styles = createStyleSheet({
     display: "flex",
     flexDirection: "column",
     fontFamily: "Menlo, Consolas, monospace",
-    marginTop: rem(2),
+    marginTop: "2rem",
   },
   frame: {
     boxSizing: "border-box",
     display: "flex",
     flexDirection: "column",
-    marginTop: rem(1),
+    marginTop: "1rem",
   },
   file: {
     boxSizing: "border-box",
     display: "flex",
     flexDirection: "column",
-    fontSize: rem(0.8),
+    fontSize: "0.8rem",
     color: "rgba(255, 255, 255, 0.7)",
   },
   link: {
@@ -79,6 +78,6 @@ const styles = createStyleSheet({
     textDecoration: "none",
     color: "rgba(255, 255, 255, 0.7)",
   },
-})
+}
 
 export default RedBox
