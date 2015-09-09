@@ -17,7 +17,7 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "react": "*",
+    "react": "*"
   },
   "devDependencies": {
     "babel": "^5.8.20",
